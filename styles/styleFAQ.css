@@ -7,22 +7,38 @@
     --transparent-brown: #b7722962;
 }  
 body {
-    font-family: Poppins, sans-serif;
-    background-color: #f7f3e8;
+    font-family: Poppins, sans-serif;   
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    background-color: #FCF1DF;  
+}
+section{
+    height: 100vh;
+}
+header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    width: 100px;
+}
+nav a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: var(--color-secondary);
 }
 .FAQ {
-    max-width: 600px;
     margin: 0 auto;
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 3em;
 }
 h1 {
     color: var(--color-secondary);
-    text-align: center;
+    text-align: left;
+}
+.faq-list{
+    padding: 2em;
 }
 .faq-item {
     border-bottom: 1px solid #e0e0e0;
@@ -63,15 +79,33 @@ h1 {
 }
 .logo {
     font-weight: bold;
-    color: ;
 }
-.button {
-    background-color: var(--color-background);
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 4px;
-    cursor: pointer;
+.download-section {
+    text-align: center;
+}
+.download-title {
+    color:var(--color-secondary);
+    font-size: 2.5em;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+.store-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 2em;
+}
+.store-button {
+    color: #fff;
+    border-radius: 8px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 14px;
+}
+.store-button img {
+    margin-right: 10px;
 }
 footer {
     background-color: var(--color-secondary);
