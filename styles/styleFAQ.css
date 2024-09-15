@@ -158,3 +158,94 @@ footer {
     font-size: 12px;
     margin-top: auto;
 }
+/* Media queries */
+
+@media (max-width: 768px) {
+    section{
+        height: auto;
+    }
+    .FAQ {
+        padding: 2em;
+    }
+
+    .faq-list {
+        padding: 1em;
+    }
+
+    .faq-item {
+        margin-bottom: 5px;
+    }
+
+    .faq-question {
+        padding: 5px;
+    }
+
+    .download-section {
+        padding: 2em;
+    }
+
+    .download-title {
+        font-size: 2em;
+    }
+
+    .store-buttons {
+        flex-direction: column;
+    }
+
+    .store-button {
+        margin-bottom: 10px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .footer-column {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    section{
+        height: auto;
+    }
+    .FAQ {
+        padding: 1em;
+    }
+
+    .faq-list {
+        padding: 0.5em;
+    }
+
+    .faq-item {
+        margin-bottom: 2px;
+    }
+
+    .faq-question {
+        padding: 2px;
+    }
+
+    .download-section {
+        padding: 1em;
+    }
+
+    .download-title {
+        font-size: 1.5em;
+    }
+
+    .store-button {
+        font-size: 12px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    .cofundadores {
+        font-size: 12px;
+    }
+
+    .copyright {
+        font-size: 10px;
+    }
+}
