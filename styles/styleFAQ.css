@@ -29,6 +29,19 @@ nav a {
     text-decoration: none;
     color: var(--color-secondary);
 }
+.download-button-header{
+    background-color: var(--color-secondary);
+    color: var(--white);
+    border: none;
+    border-radius: 2em;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.download-button-header:hover{
+    background-color: var(--color-primary);
+    color: var(--white);
+}
 .FAQ {
     margin: 0 auto;
     padding: 3em;
