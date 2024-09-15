@@ -172,3 +172,121 @@ footer {
     font-size: 12px;
     margin-top: auto;
 }
+/* Media queries */
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+    section{
+        height: auto;
+    }
+    .hero {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .hero-column1 {
+        margin-right: 0;
+    }
+
+    .hero-column2 {
+        margin-top: 20px;
+    }
+
+    .features, .business-features {
+        flex-direction: column;
+    }
+
+    .feature-card, .business-card {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .transform-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .column-image {
+        margin-bottom: 20px;
+    }
+
+    .download-section {
+        padding: 20px;
+    }
+
+    .store-buttons {
+        flex-direction: column;
+    }
+
+    .store-button {
+        margin-bottom: 10px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .footer-column {
+        margin-bottom: 20px;
+    }
+}
+
+/* For screens smaller than 480px */
+@media (max-width: 480px) {
+    section{
+        height: auto;
+    }
+    .hero {
+        padding: 10px;
+    }
+
+    .hero-column1 {
+        font-size: 2em;
+    }
+
+    .hero-image {
+        width: 50%;
+    }
+
+    .features, .business-features {
+        padding: 10px;
+    }
+
+    .feature-card, .business-card {
+        padding: 1.5em;
+        font-size: 18px;
+    }
+
+    .transform-section {
+        padding: 10px;
+    }
+
+    .column-text {
+        font-size: 2em;
+    }
+
+    .download-section {
+        padding: 10px;
+    }
+
+    .download-title {
+        font-size: 1.5em;
+    }
+
+    .store-button {
+        font-size: 12px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    .cofundadores {
+        font-size: 12px;
+    }
+
+    .copyright {
+        font-size: 10px;
+    }
+}
