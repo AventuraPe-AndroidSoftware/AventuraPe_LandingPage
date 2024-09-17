@@ -6,6 +6,45 @@
     --white: #ffffff;
     --transparent-brown: #b7722962;
 }  
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #765532a2;
+    padding: 30px;
+    padding-top: 40px;
+}
+
+.sidebar h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    font-family: Poppins, sans-serif;   
+    color: #ffffff;
+    text-decoration: solid;
+    font-size: 16px;
+}
+
+.sidebar ul li a:hover {
+    color: #5a3711;
+    cursor: pointer;
+    font-weight: bold;
+}
+
 body {
     font-family: Poppins, sans-serif;   
     margin: 0;
@@ -203,6 +242,7 @@ footer {
     .footer-column {
         margin-bottom: 20px;
     }
+    
 }
 
 @media (max-width: 480px) {
