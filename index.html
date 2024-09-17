@@ -11,6 +11,20 @@
     <link rel="stylesheet" href="styles/style.css">
     <title>AventuraPE</title>
 </head>
+<style>
+    .inicio-box {
+        position: relative;
+        background-image: url('assets/backgroundbarbs.avif');
+        background-size: cover; /* La imagen cubre toda la sección */
+        background-position: center; /* Centra la imagen */
+        background-repeat: no-repeat; /* No repite la imagen */
+        padding: 50px 20px;
+        width: 100%;
+        text-align: center;
+        color: white; /* Texto blanco para contraste */
+        height: 100%; /* Asegura que la sección ocupe toda la altura de la pantalla */
+    }
+</style>
 <body>
     <header>
         <img src="assets/AventuraPeLogo.png" alt="Aventurela Logo" class="logo">
@@ -21,16 +35,17 @@
         </nav>
     </header>
 
-    <section class="hero">
-        <div class="hero-column1">
-            <h1>Descubre aventura y diversión en tu ciudad</h1>
+    <section class="inicio-box">
+        <h1>Aquí comienza tu aventura!!</h1>
+        <div class="column1">
+            <p class="subtitulo-inicio">
+                En AventuraPe, cada día es una nueva oportunidad para descubrir, reír y conectar con lo mejor que el mundo tiene para ofrecer. Sumérgete en experiencias inolvidables, desde emocionantes aventuras al aire libre hasta eventos únicos en locales cerca de ti. Crea recuerdos que perdurarán en el tiempo, vive momentos llenos de risas y comparte la emoción de cada microaventura con quienes más amas. ¡Tu próxima gran historia comienza aquí!
+            </p>
+            <button class="download-button" onclick="window.location.href='#descarga'">Descargar</button>
+            <button class="download-button" onclick="window.location.href='#servicios'">¿Qué servicios ofrecemos?</button>
         </div>
-        <div class="hero-column2">            
-            <img src="assets/1imagen.png" alt="Personas disfrutando en la ciudad" class="hero-image">
-        </div>
-        
     </section>
-
+  
     <section class="features">
         <div class="feature-card">
             <img src="assets/explora.png" class="feature-image">
@@ -57,23 +72,11 @@
             <h2>Transforma tu tienda en una aventura local</h2>
         </div>
     </section>
-    <section class="features">
-        <div class="feature-card">
-            <img src="assets/crea.png" class="feature-image">
-            <h3>Crea retos emocionantes</h3>
-            <p>Registra tu tienda o emprendimiento para ofrecer mini retos y aumenta tus ventas</p>
-        </div>
-        <div class="feature-card">
-            <img src="assets/visibilidad.png" class="feature-image">
-            <h3>Incrementa la visibilidad</h3>
-            <p>Brinda experiencias únicas a tus clientes. Haz que tu emprendimiento se destaque.</p>
-        </div>
-        <div class="feature-card">
-            <img src="assets/leal.png" class="feature-image">
-            <h3>Fomenta la lealtad</h3>
-            <p>Crea experiencias divertidas y convierte a los visitantes en clientes recurrentes.</p>
-        </div>
-    </section>
+
+    <div id="servicios" class="servicios-section">
+        <img src="assets/Imagen2.png" class="servicios-img">
+    </div>
+    
     <div id="descarga" class="download-section">
         <h2 class="download-title">¿Qué esperas para unirte a la aventura?
             <br> Descarga la app móvil y empieza tu aventura</h2>

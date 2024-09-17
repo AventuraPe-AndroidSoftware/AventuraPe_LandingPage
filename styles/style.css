@@ -1,11 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 :root {
-    --color-primary: #FFC940;
+    --color-primary: #765532;
     --color-secondary: #765532;
     --color-background: #FCF1DF;
     --white: #ffffff;
     --transparent-brown: #b7722962;
-}  
+}
+
+.subtitulo-inicio{
+    margin: 20px 40px 20px;
+    font-size: 1.5em;
+    text-align: left;
+    color: #fff;
+}
+.inicio-box h1 {
+    margin: 110px 40px 20px; /* Ajusta el espacio entre los títulos */
+    text-align: left;
+    font-size: 40px;
+}
+.servicios-img{
+    width: 100%;
+    height: 100%; /* Asegura que la sección ocupe toda la altura de la pantalla */
+}
+.column1{
+    margin-right: 890px;
+}
+.download-button {
+    background-color: #8cb65b; /* Color de fondo del botón */
+    color: rgb(0, 0, 0); /* Color del texto en el botón */
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+    margin-right: 40px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #4c692a; /* Color al hacer hover */
+    color: white; /* Color del texto en el botón */
+}
+
+/* Opcional: Añadir una capa de fondo oscuro para mejorar el contraste */
+.inicio-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Fondo oscuro transparente */
+    z-index: 1;
+}
+
+.inicio-box h1, .download-button {
+    position: relative;
+    z-index: 2; /* Asegura que el texto y los botones estén encima de la capa oscura */
+}
+
 body {
     font-family: Poppins, sans-serif;   
     margin: 0;
