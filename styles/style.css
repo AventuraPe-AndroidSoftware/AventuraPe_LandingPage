@@ -6,7 +6,12 @@
     --white: #ffffff;
     --transparent-brown: #b7722962;
 }
-
+.titulo-feature{
+    margin: 20px 40px 20px;
+    font-size: 2.3em;
+    text-align: left;
+    color: #765532;
+}
 .subtitulo-inicio{
     margin: 20px 40px 20px;
     font-size: 1.5em;
@@ -23,7 +28,7 @@
     height: 100%; /* Asegura que la sección ocupe toda la altura de la pantalla */
 }
 .column1{
-    margin-right: 890px;
+    width: 100%;
 }
 .download-button {
     background-color: #8cb65b; /* Color de fondo del botón */
@@ -128,7 +133,6 @@ nav a {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: auto;
 }
 .features h3{
     color: var(--white);
@@ -142,12 +146,16 @@ nav a {
 .feature-card, .business-card {
     background-color: var(--transparent-brown);
     border-radius: 10px;
-    padding: 2.5em;
-    width: 25em; 
+    padding: 2em;
+    width: 30em; 
+    margin-left: 5rem;
+
     height: 37em;
     text-align: center;
     box-sizing: border-box;
 }
+
+
 .transform-section {
     background-color: var(--color-primary);
     display: flex;
@@ -158,6 +166,13 @@ nav a {
     padding-bottom: 20px;
     padding-right: 60px;
 }
+
+.titulo-aventurero-section{
+    font-size: 5em;
+    text-align: center;
+    color: #794f22;
+}
+
 .column-image{
     display: flex; 
     align-items: center; 
@@ -172,8 +187,63 @@ nav a {
 }
 .transform-image {
     width: 100%;
-    height:auto;
+    height: 100%;
 }
+
+
+
+
+
+.servicios {
+    text-align: center;
+    background-color: #6b4b2a;
+    padding: 20px;
+}
+
+.servicios h2 {
+    font-size: 50px;
+    color: #ffffff;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.servicio-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.servicio-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.texto-servicio {
+    margin-top: -100px;
+    background: #6b4b2a;
+    padding: 40px;
+    color: white;
+    text-align: left;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+.texto-servicio h3 {
+    font-size: 30px;
+}
+
+.texto-servicio p {
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+
+
+
+
+
 .download-section {
     padding: 1em;
     text-align: center;

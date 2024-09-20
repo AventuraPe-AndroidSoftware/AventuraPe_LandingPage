@@ -24,12 +24,18 @@
         color: white; /* Texto blanco para contraste */
         height: 100%; /* Asegura que la sección ocupe toda la altura de la pantalla */
     }
+    .imagen2-aventuero {
+        width: 60%;
+        height: auto;
+        margin-left: 20%;
+    }
 </style>
 <body>
     <header>
         <img src="assets/AventuraPeLogo.png" alt="Aventurela Logo" class="logo">
         <nav>
             <a href="#emprendedor-section">Emprendedor</a>
+            <a href="#aventurero-section">Aventurero</a>
             <a href="FAQ.html">Preguntas frecuentes</a>
             <a class="download-button-header" href="#descarga">Descargar</a>
         </nav>
@@ -45,8 +51,11 @@
             <button class="download-button" onclick="window.location.href='#servicios'">¿Qué servicios ofrecemos?</button>
         </div>
     </section>
-  
+
     <section class="features">
+        <div class="titulo-feature">
+            <h2>¿Por qué unirte a AventuraPe?</h2>
+        </div>
         <div class="feature-card">
             <img src="assets/explora.png" class="feature-image">
             <h3>Explora nuevos lugares</h3>
@@ -72,10 +81,43 @@
             <h2>Transforma tu tienda en una aventura local</h2>
         </div>
     </section>
+    
+    <section id="aventurero-section">
+        <h2 class="titulo-aventurero-section">Vive experiencias que nunca olvidarás!</h2>
+        <div class="column-image">
+            <img src="assets/Imagen1aventuero.png" alt="Gente viendo un parque" class="imagen2-aventuero">
+        </div>
+    </section>
+    
 
-    <div id="servicios" class="servicios-section">
-        <img src="assets/Imagen2.png" class="servicios-img">
+    <div class="servicios">
+        <h2>¿QUÉ SERVICIOS OFRECEMOS?</h2>
+    
+        <div class="servicio-item">
+            <img src="assets/lol1.jpg" alt="Descubre las mejores aventuras">
+            <div class="texto-servicio">
+                <h3>Descubre las mejores aventuras</h3>
+                <p>Desde rutas de senderismo hasta eventos culturales, te ayudamos a encontrar las mejores microaventuras que te llenarán de momentos inolvidables. ¡Explora lo que tu ciudad tiene para ofrecer!</p>
+            </div>
+        </div>
+    
+        <div class="servicio-item">
+            <img src="assets/lol2.jpg" alt="Publica tus actividades si eres emprendedor">
+            <div class="texto-servicio">
+                <h3>Publica tus actividades si eres emprendedor</h3>
+                <p>Publica talleres, eventos, experiencias gastronómicas, rutas guiadas y mucho más, para que los usuarios puedan descubrir lo que ofreces y unirse a tus experiencias.</p>
+            </div>
+        </div>
+    
+        <div class="servicio-item">
+            <img src="assets/lol3.jpg" alt="Califica las actividades que realizas">
+            <div class="texto-servicio">
+                <h3>Califica las actividades que realizas</h3>
+                <p>Después de vivir una microaventura, podrás calificarla y dejar tu opinión. Esto ayuda a otros aventureros a elegir las mejores experiencias.</p>
+            </div>
+        </div>
     </div>
+    
     
     <div id="descarga" class="download-section">
         <h2 class="download-title">¿Qué esperas para unirte a la aventura?
