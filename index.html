@@ -1,157 +1,360 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
     <link rel="icon" href="assets/AventuraPeLogo.ico" type="image/x-icon">
-    <script src="https://kit.fontawesome.com/9099537b6d.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/style.css">
-    <title>AventuraPE</title>
-</head>
-<style>
-    .inicio-box {
-        position: relative;
-        background-image: url('assets/backgroundbarbs.avif');
-        background-size: cover; /* La imagen cubre toda la sección */
-        background-position: center; /* Centra la imagen */
-        background-repeat: no-repeat; /* No repite la imagen */
-        padding: 50px 20px;
-        width: 100%;
-        text-align: center;
-        color: white; /* Texto blanco para contraste */
-        height: 100%; /* Asegura que la sección ocupe toda la altura de la pantalla */
-    }
-    .imagen2-aventuero {
-        width: 60%;
-        height: auto;
-        margin-left: 20%;
-    }
-</style>
-<body>
-    <header>
-        <img src="assets/AventuraPeLogo.png" alt="Aventurela Logo" class="logo">
-        <nav>
-            <a href="#emprendedor-section">Emprendedor</a>
-            <a href="#aventurero-section">Aventurero</a>
-            <a href="FAQ.html">Preguntas frecuentes</a>
-            <a class="download-button-header" href="#descarga">Descargar</a>
-        </nav>
+    <title>AventuraPe</title>
+  </head>
+  <body>
+    <header class="header" id="home">
+      <nav>
+        <div class="nav__bar">
+          <div class="logo nav__logo">
+            <a href="#servicios">AventuraPe</a>
+          </div>
+          <ul class="nav__links" id="nav-links">
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#nosotros">Sobre nosotros</a></li>
+            <li><a href="#testimonios">Testimonios</a></li>
+            <li><a href="#preguntas">Preguntas frecuentes</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+          
+        </div>
+      </nav>
+      <div class="section__container header__container">
+        <div class="header__content">
+          <h3 class="section__subheader">Aquí comienza tu aventura!!</h3>
+          <h1 class="section__header">
+            Sumérgete en nuevas experiencias al rededor de la belleza de Perú.
+          </h1>
+          <div class="scroll__btn">
+            <a href="#servicios">
+                Explora
+              <span><i class="ri-arrow-down-line"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="header__socials">
+          <span>Síguenos</span>
+          <a href="https://instagram.com"><i class="ri-instagram-line"></i></a>
+          <a href="https://twitter.com"><i class="ri-twitter-fill"></i></a>
+        </div>
+      </div>
     </header>
 
-    <section class="inicio-box">
-        <h1>Aquí comienza tu aventura!!</h1>
-        <div class="column1">
-            <p class="subtitulo-inicio">
-                En AventuraPe, cada día es una nueva oportunidad para descubrir, reír y conectar con lo mejor que el mundo tiene para ofrecer. Sumérgete en experiencias inolvidables, desde emocionantes aventuras al aire libre hasta eventos únicos en locales cerca de ti. Crea recuerdos que perdurarán en el tiempo, vive momentos llenos de risas y comparte la emoción de cada microaventura con quienes más amas. ¡Tu próxima gran historia comienza aquí!
-            </p>
-            <button class="download-button" onclick="window.location.href='#descarga'">Descargar</button>
-            <button class="download-button" onclick="window.location.href='#servicios'">¿Qué servicios ofrecemos?</button>
+     <!-- servicios Section -->
+
+    <section class="servicios"  id="servicios">
+      <div class="section__container about__container">
+        <div class="about__image about__image-1">
+          <img src="assets/limalugar3.jpg" alt="servicios" />
         </div>
+        <div class="about__content about__content-1">
+          <h3 class="section__subheader">¿Que puedes hacer?</h3>
+          <h2 class="section__header">¡Califica las actividades 
+            que realizas como aventurero!</h2>
+          <p>
+            Tu experiencia no solo será un recuerdo inolvidable, 
+            sino también una guía para otros aventureros que buscan 
+            las mejores experiencias. Ayuda a la comunidad de 
+            exploradores a descubrir aventuras únicas y bien 
+            valoradas, y sé parte del viaje de quienes están por 
+            emprender nuevas travesías. ¡Tus comentarios son el 
+            mapa que guiará a otros hacia momentos inolvidables!
+          </p>
+          
+        </div>
+        <div class="about__image about__image-2" id="servicios">
+          <img src="assets/limalugar4.jpg" alt="servicios" />
+        </div>
+        <div class="about__content about__content-2">
+          <h2 class="section__header">¡Descubre las mejores aventuras!</h2>
+          <p>
+            Desde emocionantes rutas de senderismo hasta vibrantes 
+            eventos culturales, te ofrecemos un abanico de microaventuras
+             que transformarán tu día a día en una experiencia 
+             inolvidable. Ya sea que estés buscando adrenalina o 
+             momentos de relajación, te ayudamos a encontrar actividades 
+             personalizadas que se adaptan a tus intereses. 
+             ¡Explora, descubre y disfruta de lo que tu ciudad tiene 
+             para ofrecer, y convierte cada día en una nueva oportunidad 
+             para vivir algo extraordinario! No importa si eres un 
+             aventurero experimentado o alguien que busca nuevas 
+             emociones, tenemos la aventura perfecta para ti.
+          </p>
+          
+        </div>
+        <div class="about__image about__image-3" id="servicios">
+          <img src="assets/limalugar5.jpg" alt="servicios" />
+        </div>
+        <div class="about__content about__content-3">
+          <h2 class="section__header">
+            ¡Publica tus actividades si eres emprendedor!</h2>
+          <p>
+            Publica talleres, eventos, experiencias gastronómicas, rutas 
+            guiadas y mucho más, y permite que tu negocio brille en 
+            nuestra plataforma. Atrae a aventureros curiosos que 
+            están en busca de actividades únicas y auténticas, y 
+            ofrece experiencias que dejarán una huella. Conecta con 
+            una comunidad activa que quiere descubrir lo mejor que 
+            tienes para ofrecer y haz que se unan a tus eventos. 
+            Ya sea una clase de cocina, una caminata guiada o un 
+            evento cultural, convierte cada oportunidad en una 
+            experiencia inolvidable para tus participantes. 
+            ¡Comparte lo que amas y deja que el mundo lo descubra!
+          </p>
+          
+        </div>
+      </div>
     </section>
 
-    <section class="features">
-        <div class="titulo-feature">
-            <h2>¿Por qué unirte a AventuraPe?</h2>
+    <!-- nosotros Section -->
+    <section class="nosotros">
+      <div class="section__container about__container2">
+        
+        <div class="about__content about__content-2" id="nosotros">
+          <h3 class="section__subheader">Sobre Nosotros</h3>
+          <h2 class="section__header">¡Conoce a nuestro equipo!</h2>
+          <div class="empty-box"></div>
+
         </div>
-        <div class="feature-card">
-            <img src="assets/explora.png" class="feature-image">
-            <h3>Explora nuevos lugares</h3>
-            <p>Únete a retos y conoce nuevas tiendas. Crea nuevas experiencias</p>
-        </div>
-        <div class="feature-card">
-            <img src="assets/gana.png" class="feature-image">
-            <h3>Gana recompensas</h3>
-            <p>Obtén descuentos, ofertas o tarjetas de regalo de tu tienda favorita</p>
-        </div>
-        <div class="feature-card">
-            <img src="assets/diviertete.png" class="feature-image">
-            <h3>Diviértete y participa</h3>
-            <p>Conoce a personas nuevas, realiza los retos en grupos, tu eliges la cantidad</p>
-        </div>
+
+
+          <div class="about__image2 about__image-1" id="nosotros">
+            <img src="assets/team.jpg" alt="nosotros" />
+          </div>
+
+          <div class="empty-box"></div>
+                    
+          <p>
+            Somos un grupo de desarrolladores de software que son apasionados por la aventura, la cultura 
+            y la naturaleza que quiere compartir las mejores experiencias 
+            en Perú. Conectamos a aventureros con emprendedores locales 
+            que ofrecen actividades únicas y auténticas, y creamos una 
+            plataforma que te permite explorar y compartir momentos 
+            inolvidables. ¡Descubre la belleza de Perú, comparte tus 
+            experiencias y vive momentos inolvidables con AventuraPe!
+          </p>
+          
+      </div>
     </section>
 
-    <section id="emprendedor-section" class="transform-section">
-        <div class="column-image">
-            <img src="assets/2imagen.png" alt="Tienda local" class="transform-image">
+    <!-- Testimonios Section -->
+    <section class="testimonios">
+      <div class="section__container testimonios__container">
+        <div class="about__content about__content-3" id="testimonios">
+          <div class="testimonios__header">
+            <h3 class="section__subheader">Testimonios</h3>
+            <h2 class="section__header">¡Descubre lo que dicen nuestros aventureros!</h2>
+          </div>
         </div>
-        <div class="column-text">            
-            <h2>Transforma tu tienda en una aventura local</h2>
+        
+        <div class="testimonios__slider">  
+          <div class="testimonios__slide">
+            <div class="testimonios__content">
+              <p>
+                "Participar en el taller de escultura en CaféContigo fue una experiencia 
+                única. El ambiente acogedor del café y la guía experta del instructor 
+                hicieron que el taller fuera muy divertido y educativo. ¡Definitivamente 
+                volveré para más actividades!"
+              </p>
+              <h3>Laura Gómez</h3>
+              <span>Taller de Escultura en CaféContigo</span>
+            </div>
+          </div>
+          <div class="testimonios__slide">
+            <div class="testimonios__content">
+              <p>
+                "¡Qué experiencia tan divertida! Nos vestimos de naranja de pies a cabeza 
+                para ganarnos un 2x1 en un local de ropa. Fue una manera genial de 
+                interactuar con la tienda y obtener un gran descuento. ¡Lo recomiendo 
+                totalmente!"
+              </p>
+              <h3>Pedro Sánchez</h3>
+              <span>Promoción 2x1 en Local de Ropa</span>
+            </div>
+          </div>
+          <div class="testimonios__slide">
+            <div class="testimonios__content">
+              <p>
+                "El reto de Halloween en el lugar de diversiones fue increíblemente 
+                emocionante. Tuvimos que superar varios desafíos espeluznantes para 
+                ganar premios. La atmósfera era perfecta para la ocasión y nos 
+                divertimos muchísimo. ¡No puedo esperar para el próximo Halloween!"
+              </p>
+              <h3>Carla Ruiz</h3>
+              <span>Reto de Halloween en Lugar de Diversiones</span>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-    
-    <section id="aventurero-section">
-        <h2 class="titulo-aventurero-section">Vive experiencias que nunca olvidarás!</h2>
-        <div class="column-image">
-            <img src="assets/Imagen1aventuero.png" alt="Gente viendo un parque" class="imagen2-aventuero">
+
+    <!-- Preguntas frecuentes Section -->
+    <section class="preguntas" id="preguntas">
+      <div class="section__container preguntas__container">
+
+        <div class="about__content about__content-4" id="preguntas">
+          <div class="preguntas__header">
+            <h3 class="section__subheader">Preguntas</h3>
+            <h2 class="section__header">Las preguntas más frecuentes</h2>
+          </div>
         </div>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>¿Qué tipo de actividades puedo encontrar en AventuraPe?</h3>
+              <i class="ri-add-line faq-icon"></i>
+            </div>
+            <div class="faq-answer">
+              <p>En AventuraPe encontrarás una amplia gama de actividades, desde rutas de senderismo, talleres culturales, hasta experiencias gastronómicas y eventos locales organizados por emprendedores peruanos.</p>
+            </div>
+          </div>
+    
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>¿Cómo puedo calificar las actividades que realizo?</h3>
+              <i class="ri-add-line faq-icon"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Después de completar una actividad, puedes calificarla y dejar un comentario para que otros aventureros puedan tomar decisiones informadas basadas en tu experiencia.</p>
+            </div>
+          </div>
+    
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>¿Cómo puedo publicar una actividad si soy emprendedor?</h3>
+              <i class="ri-add-line faq-icon"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Si eres emprendedor, puedes registrarte en la plataforma y comenzar a publicar actividades desde tu cuenta. Asegúrate de incluir todos los detalles para atraer más aventureros a tus eventos.</p>
+            </div>
+          </div>
+    
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>¿Es AventuraPe gratuito para los usuarios?</h3>
+              <i class="ri-add-line faq-icon"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Registrarse y explorar actividades en AventuraPe es completamente gratuito para los usuarios. Algunas actividades pueden tener un costo, el cual es definido por los emprendedores que las organizan.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>¿Cómo me contacto con el organizador de una actividad?</h3>
+              <i class="ri-add-line faq-icon"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Una vez inscrito en una actividad, tendrás acceso a la información de contacto del organizador a través de la página de detalles de la actividad. También puedes enviarle un mensaje desde la plataforma.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>¿Puedo organizar actividades en diferentes ciudades de Perú?</h3>
+              <i class="ri-add-line faq-icon"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Sí, AventuraPe permite que los emprendedores publiquen actividades en cualquier ciudad del país. Solo asegúrate de especificar la ubicación correcta al crear la actividad.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>¿Cómo funciona el sistema de recomendaciones?</h3>
+              <i class="ri-add-line faq-icon"></i>
+            </div>
+            <div class="faq-answer">
+              <p>El sistema de recomendaciones de AventuraPe utiliza tus preferencias, actividades previas y calificaciones para sugerirte nuevas experiencias que puedan interesarte, basadas en tus gustos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section class="contacto" >
+      <div class="section__container about__container2" id="contacto">
+        
+        <div class="about__content about__content-5">
+          <h3 class="section__subheader">Contacto</h3>
+          <h2 class="section__header">¡Contáctate con nosotros!</h2>
+  
+          <div class="contact_us_section">
+            <form id="contact_form" onsubmit="return validateContactForm()">
+              <div class="input_container">
+                  <label for="contact_name" class="contact_label">Nombre:</label>
+                  <input type="text" id="contact_name" class="contact_input" placeholder="Tu nombre" required>
+              </div>
+              <div class="input_container">
+                  <label for="contact_email" class="contact_label">Correo Electrónico:</label>
+                  <input type="email" id="contact_email" class="contact_input" placeholder="tuemail@ejemplo.com" required>
+              </div>
+              <div class="input_container">
+                  <label for="contact_message" class="contact_label">Mensaje:</label>
+                  <textarea id="contact_message" class="contact_textarea" placeholder="Escribe tu mensaje aquí..." required></textarea>
+              </div>
+              <button type="submit" class="contact_button">Enviar mensaje</button>
+              <div id="contact_response" class="contact_response"></div>
+            </form>
+          </div>
+  
+        </div>
+      </div>
     </section>
     
 
-    <div class="servicios">
-        <h2>¿QUÉ SERVICIOS OFRECEMOS?</h2>
-    
-        <div class="servicio-item">
-            <img src="assets/lol1.jpg" alt="Descubre las mejores aventuras">
-            <div class="texto-servicio">
-                <h3>Descubre las mejores aventuras</h3>
-                <p>Desde rutas de senderismo hasta eventos culturales, te ayudamos a encontrar las mejores microaventuras que te llenarán de momentos inolvidables. ¡Explora lo que tu ciudad tiene para ofrecer!</p>
-            </div>
-        </div>
-    
-        <div class="servicio-item">
-            <img src="assets/lol2.jpg" alt="Publica tus actividades si eres emprendedor">
-            <div class="texto-servicio">
-                <h3>Publica tus actividades si eres emprendedor</h3>
-                <p>Publica talleres, eventos, experiencias gastronómicas, rutas guiadas y mucho más, para que los usuarios puedan descubrir lo que ofreces y unirse a tus experiencias.</p>
-            </div>
-        </div>
-    
-        <div class="servicio-item">
-            <img src="assets/lol3.jpg" alt="Califica las actividades que realizas">
-            <div class="texto-servicio">
-                <h3>Califica las actividades que realizas</h3>
-                <p>Después de vivir una microaventura, podrás calificarla y dejar tu opinión. Esto ayuda a otros aventureros a elegir las mejores experiencias.</p>
-            </div>
-        </div>
-    </div>
-    
-    
-    <div id="descarga" class="download-section">
-        <h2 class="download-title">¿Qué esperas para unirte a la aventura?
-            <br> Descarga la app móvil y empieza tu aventura</h2>
-        <div class="store-buttons">
-            <a href="https://www.apple.com/app-store/" class="store-button apple-store" target="_blank">
-                <img src="assets/appstore.png" alt="Descargar en Apple Store">
-            </a>
-            <a href="https://play.google.com/store" class="store-button google-play" target="_blank">
-                <img src="assets/playstore.png" alt="Descargar en Google Play">
-            </a>
-        </div>
-    </div>
     <footer class="footer">
-        <div class="footer-column">
-            <img src="assets/AventuraPeLogo.png" alt="Aventurate Logo" class="logo">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="logo footer__logo">
+            <a href="#servicios">AventuraPe</a>
+          </div>
+          <p>
+            AventuraPe es una app que conecta a aventureros 
+            con experiencias únicas en Perú que brindan los emprendedores locales. Descubre y comparte 
+            actividades que te permitan explorar la belleza de 
+            nuestro país y vivir momentos inolvidables.
+          </p>
         </div>
-        <div class="footer-column">
-            <div class="cofundadores">
-                <h3>Cofundadores</h3>
-                Jimena Tamara Cama Salvatierra<br>
-                Kalid Palacios Jauregui<br>
-                Barbara Susana Quezada Portalatico<br>
-                Aldo Alberto Baldeon Fabian<br>
-                Alexander Jair Castillo Castillo<br><br>
-                <a href="https://twitter.com" target="_blank" ><img src="assets/twitter.png" alt="twitter" class="social-button"></a>
-                <a href="https://facebook.com" target="_blank"><img src="assets/facebook.png" alt="facebook" class="social-button"></a>
-                <a href="https://instagram.com" target="_blank"><img src="assets/instagram.png" alt="instagram" class="social-button"></a>
-                <a href="https://youtube.com"target="_blank"><img src="assets/youtube.png" alt="youtube" class="social-button"></a>
-            </div>
+        <div class="footer__col">
+          <h4>Cofundadores</h4>
+          <ul class="footer__links">
+            <li><Cofundadores</li>
+            <li>Jimena Tamara Cama Salvatierra</li>
+            <li>Kalid Palacios Jauregui</li>
+            <li>Barbara Susana Quezada Portalatino</li>
+            <li>Aldo Alberto Baldeon Fabian</li>
+            <li>Alexander Jair Castillo Castillo</li>
+          </ul>
         </div>
-        <div class="footer-column">
-            <p class="copyright">© Copyright Derechos restringidos | Perú</p>
+        <div class="footer_socialmedia">
+          <h4>Síguenos</h4>
+          <ul class="footer_socialmedia2">
+            <li><a href="https://twitter.com" target="_blank" ><img src="assets/twitter.png" alt="twitter" class="social-button"></a></li>
+            <li><a href="https://facebook.com" target="_blank"><img src="assets/facebook.png" alt="facebook" class="social-button"></a></li>
+            <li><a href="https://instagram.com" target="_blank"><img src="assets/instagram.png" alt="instagram" class="social-button"></a></li>
+          </ul>
         </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2024 AventuraPe. All rights reserved.
+      </div>
     </footer>
-</body>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+  </body>
 </html>
