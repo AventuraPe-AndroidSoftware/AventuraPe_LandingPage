@@ -2,6 +2,7 @@ const menuBtn = document.getElementById("menu-btn");
 const navLinks = document.getElementById("nav-links");
 const menuBtnIcon = menuBtn.querySelector("i");
 const faqItems = document.querySelectorAll(".faq-item");
+const header = document.querySelector("header");
 
 menuBtn.addEventListener("click", (e) => {
   const isOpen = navLinks.classList.contains("open");
