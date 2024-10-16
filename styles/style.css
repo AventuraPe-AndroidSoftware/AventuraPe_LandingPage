@@ -143,7 +143,7 @@ body {
         rgba(255, 255, 255, 0),
         var(--primary-color)
       ),
-      url("/assets/fondo2.jpg");
+      url("/assets/backgroundbarbs1.jpg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
