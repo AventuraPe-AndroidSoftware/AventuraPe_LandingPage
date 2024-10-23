@@ -203,7 +203,7 @@ nav {
 }
 
 .presentacion__image img {
-  max-width: 500px;
+  max-width: 100%;
   border-radius: 10px;
 }
 
