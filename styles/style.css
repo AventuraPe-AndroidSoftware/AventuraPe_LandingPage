@@ -222,7 +222,35 @@ nav {
   font-size: 1.1rem;
   line-height: 1.6;
 }
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+  .presentacion__container {
+    flex-direction: column; /* Cambia a columna en pantallas más pequeñas */
+    align-items: center;
+  }
 
+  .presentacion__content .section__header {
+    font-size: 2rem; /* Reduce el tamaño de la cabecera */
+  }
+
+  .presentacion__content p {
+    font-size: 1rem; /* Ajusta el tamaño del texto en dispositivos móviles */
+  }
+}
+
+@media (max-width: 480px) {
+  .presentacion {
+    padding: 2rem 1rem;
+  }
+
+  .presentacion__content .section__header {
+    font-size: 1.8rem; /* Ajusta el tamaño del encabezado para pantallas muy pequeñas */
+  }
+
+  .presentacion__content p {
+    font-size: 0.95rem; /* Ajusta el tamaño del texto para pantallas pequeñas */
+  }
+}
 
 @keyframes show-nav {
   0% {
